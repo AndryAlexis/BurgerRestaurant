@@ -1,0 +1,67 @@
+#our-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+
+    padding: 2em var(--padding-x-container);
+}
+
+#our-services .wrapper {
+    max-width: var(--max-w-container);
+    width: var(--max-w-container);
+}
+
+#our-services .wrapper h2 {
+    text-align: center;
+    width: fit-content;
+
+    margin: 0 auto 2em auto;
+
+    position: relative;
+
+    font: 400 normal 2em "Sofadi One", system-ui
+}
+
+#our-services .wrapper .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+
+    gap: 3em;
+}
+
+#our-services .service {
+    display: grid;
+    gap: .5em;
+
+    border-left: 1px solid var(--p-color);
+    padding-left: 1.5em;
+}
+
+#our-services .service > i {
+    border: 1px solid var(--secondary-text-color-1);
+    padding: .5em;
+    width: fit-content;
+    font-size: 1.2em;
+    color: var(--secondary-text-color-1);
+}
+
+#our-services .service h3 {
+    font-size: 1.1em;
+}
+
+#our-services .service p {
+    font-size: .9em;
+}
+
+#our-services .service > i {
+    color: var(--secondary-text-color-1);
+    font-size: 1.5em;
+}
+
+#our-services .service :is(a, a + i) {
+    font-size: .9em;
+    color: var(--secondary-text-color-1);
+    font-weight: bold;
+}

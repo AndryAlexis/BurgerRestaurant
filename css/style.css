@@ -1,6 +1,15 @@
 @import url(./reset-css.css);
 @import url(./variables.css);
 @import url(./utilitary-classes.css);
-@import url(./header.css);
+@import url(./fonts.css);
 
+@import url(./header.css);
 @import url(./media-queries/header.css);
+
+@import url(./main/hero.css);
+@import url(./main/our-services.css);
+@import url(./main/about-us.css);
+@import url(./media-queries/main.css);
+
+@import url(./footer.css);
+@import url(./media-queries/footer.css);

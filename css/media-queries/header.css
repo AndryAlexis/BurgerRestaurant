@@ -2,6 +2,8 @@
     #main-header {
         --icon-size: 1.8em;
         position: relative;
+        height: var(--max-height-mobile-main-header);
+        max-height: var(--max-height-mobile-main-header);
     }
     #main-header .wrapper nav:first-child ul li i {
         font-size: var(--icon-size);
@@ -26,7 +28,6 @@
         top: var(--max-height-mobile-main-header);
         left: 0;
         width: 100%;
-        /* border: 5px solid red; */
 
         background-color: var(--primary-bg-color);
         padding: var(--padding-x-container);
@@ -41,7 +42,15 @@
         padding-bottom: 15px;
     }
 
+    #main-header input#mobile-main-header + ul {
+        z-index: 9999;
+    }
+
     #main-header input#mobile-main-header:not(:checked) + ul {
         display: none;
+    }
+
+    #main-header .wrapper nav ul {
+        gap: 2em;
     }
 }

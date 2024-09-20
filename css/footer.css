@@ -1,0 +1,64 @@
+#main-footer {
+    position: sticky;
+    bottom: 0;
+
+    z-index: 2;
+
+    font-size: 1rem; 
+    padding: 1em var(--padding-x-container);
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--secondary-bg-color);
+    height: var(--footer-height);
+    max-height: var(--footer-height);
+}
+
+#main-footer .wrapper {
+    max-width: var(--max-w-container);
+    width: var(--max-w-container);
+}
+
+#main-footer .wrapper nav ul {
+    display: flex;
+    gap: .5em;
+}
+
+#main-footer .wrapper nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+#main-footer .wrapper nav ul a {
+    color: var(--secondary-text-color-2);
+}
+
+#main-footer .wrapper nav ul :is(span, a) {
+    font-size: 1em;
+}
+
+#main-footer .wrapper nav ul a:hover {
+    color: var(--secondary-text-color-1);
+}
+
+#go-up-button {
+    --pseudo-margin: 10px;
+
+    position: absolute;
+    bottom: calc(var(--pseudo-margin) + 2.5em * 1.5);
+    right: 20px;
+
+    display: grid;
+    place-content: center;
+
+    cursor: pointer;
+
+    color: var(--secondary-text-color-1);
+}
+
+#go-up-button i {
+    font-size: 2.5em;
+}
