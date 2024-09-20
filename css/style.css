@@ -1,15 +1,19 @@
-@import url(./reset-css.css);
-@import url(./variables.css);
-@import url(./utilitary-classes.css);
-@import url(./fonts.css);
+/* Importing base and utility stylesheets */
+@import url(./reset-css.css);              /* Resets default browser styling */
+@import url(./variables.css);              /* Variables for consistent styling (colors, fonts, etc.) */
+@import url(./utilitary-classes.css);      /* Utility classes for common patterns */
+@import url(./fonts.css);                  /* Font declarations and styles */
 
-@import url(./header.css);
-@import url(./media-queries/header.css);
+/* Importing styles for the header */
+@import url(./header.css);                 /* Styling specific to the header */
+@import url(./media-queries/header.css);   /* Media queries for responsive header design */
 
-@import url(./main/hero.css);
-@import url(./main/our-services.css);
-@import url(./main/about-us.css);
-@import url(./media-queries/main.css);
+/* Importing styles for the main content */
+@import url(./main/hero.css);              /* Styling for the hero section */
+@import url(./main/our-services.css);      /* Styling for the 'Our Services' section */
+@import url(./main/about-us.css);          /* Styling for the 'About Us' section */
+@import url(./media-queries/main.css);     /* Media queries for responsive main content design */
 
-@import url(./footer.css);
-@import url(./media-queries/footer.css);
+/* Importing styles for the footer */
+@import url(./footer.css);                 /* Styling specific to the footer */
+@import url(./media-queries/footer.css);   /* Media queries for responsive footer design */

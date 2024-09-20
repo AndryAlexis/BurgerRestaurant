@@ -5,96 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Anchor at the top of the page for easy scrolling -->
     <div id="top-website"></div>
+
+    <!-- Main header -->
     <header id="main-header">
         <div class="wrapper">
+
+            <!-- Secondary navigation (top bar) -->
             <nav class="secondary-bg-color secondary-text-color-2">
                 <ul>
                     <li>
                         <i class="fa-solid fa-envelope secondary-text-color-1"></i>
-                        <span>
-                            andry.html@gmail.com
-                        </span>
+                        <span>andry.html@gmail.com</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone secondary-text-color-1"></i>
-                        <span>
-                            +34 6 37 39 88 57
-                        </span>
+                        <span>+34 6 37 39 88 57</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-cart-shopping secondary-text-color-1"></i>
-                        <span>
-                            Carrito compra
-                        </span>
+                        <span>Carrito compra</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-user secondary-text-color-1"></i>
-                        <span>
-                            Usuario
-                        </span>
+                        <span>Usuario</span>
                     </li>
                 </ul>
             </nav>
+
+            <!-- Main navigation -->
             <nav>
                 <div>
+                    <!-- Logo -->
                     <img src="./img/logo.jpg" alt="Rovers Logo" width="100">
-                    <!-- This checkbox controls the mobile main menu -->
+
+                    <!-- Checkbox for mobile menu toggle (hidden by default) -->
                     <input hidden type="checkbox" name="mobile-main-header" id="mobile-main-header">
+
+                    <!-- Main navigation links -->
                     <ul>
-                        <li>
-                            <a href="#">
-                                Inicio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Menú
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Equipo
-                            </a>
-                        </li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Menú</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Equipo</a></li>
                     </ul>
                 </div>
+
+                <!-- Mobile menu icon -->
                 <label for="mobile-main-header">
                     <i class="fa-solid fa-bars"></i>
                 </label>
             </nav>
         </div>
     </header>
+
+    <!-- Main content -->
     <main>
+        <!-- Hero section -->
         <section id="main-hero">
             <div class="wrapper">
-                <h1 class="secondary-text-color-2">
-                    Las mejores hamburguesas del mundo
-                </h1>
-                <h2 class="secondary-text-color-1">
-                    Bienvenido a nuestra hamburguesería
-                </h2>
-                <h3 class="secondary-text-color-2">
-                    Come a partir de 15€
-                </h3>
+                <h1 class="secondary-text-color-2">Las mejores hamburguesas del mundo</h1>
+                <h2 class="secondary-text-color-1">Bienvenido a nuestra hamburguesería</h2>
+                <h3 class="secondary-text-color-2">Come a partir de 15€</h3>
+
+                <!-- Call to action button -->
                 <button class="custom-restaurant-button">
-                    <span>
-                        Nuestra carta
-                    </span>
+                    <span>Nuestra carta</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
+
+                <!-- Social media icons -->
                 <div class="social-media">
                     <i class="fa-brands fa-facebook secondary-text-color-2"></i>
                     <i class="fa-brands fa-twitter secondary-text-color-2"></i>
@@ -102,18 +94,16 @@
                 </div>
             </div>
         </section>
+
+        <!-- Our Services section -->
         <section id="our-services">
             <div class="wrapper">
-                <h2 class="custom-restaurant-title">
-                    Our <span class="secondary-text-color-1">Services</span>
-                </h2>
+                <h2 class="custom-restaurant-title">Our <span class="secondary-text-color-1">Services</span></h2>
                 <ul class="content">
                     <li>
                         <section class="service">
                             <i class="fa-solid fa-gear"></i>
-                            <h3 class="primary-text-color">
-                                1. Carne 100% natural
-                            </h3>
+                            <h3 class="primary-text-color">1. Carne 100% natural</h3>
                             <p class="p-color">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, numquam. Sequi
                                 aliquam omnis, rerum inventore a, voluptatibus odit itaque error odio expedita cum
@@ -128,9 +118,7 @@
                     <li>
                         <section class="service">
                             <i class="fa-solid fa-truck"></i>
-                            <h3 class="primary-text-color">
-                                2. Cocina moderna
-                            </h3>
+                            <h3 class="primary-text-color">2. Cocina moderna</h3>
                             <p class="p-color">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, numquam. Sequi
                                 aliquam omnis, rerum inventore a, voluptatibus odit itaque error odio expedita cum
@@ -145,9 +133,7 @@
                     <li>
                         <section class="service">
                             <i class="fa-solid fa-heart"></i>
-                            <h3 class="primary-text-color">
-                                1. Servicio impecable
-                            </h3>
+                            <h3 class="primary-text-color">3. Servicio impecable</h3>
                             <p class="p-color">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, numquam. Sequi
                                 aliquam omnis, rerum inventore a, voluptatibus odit itaque error odio expedita cum
@@ -162,22 +148,18 @@
                 </ul>
             </div>
         </section>
+
+        <!-- About Us section -->
         <section id="about-us">
             <div class="wrapper">
-                <h2 class="custom-restaurant-title">
-                    About <span class="secondary-text-color-1">Us</span>
-                </h2>
+                <h2 class="custom-restaurant-title">About <span class="secondary-text-color-1">Us</span></h2>
                 <div class="content">
                     <div>
                         <img src="./img/about-main.jpg" alt="Our Restaurant Image" width="100%">
                     </div>
                     <section>
-                        <h3 class="primary-text-color">
-                            The History
-                        </h3>
-                        <h4 class="secondary-text-color-1">
-                            Our Restaurant
-                        </h4>
+                        <h3 class="primary-text-color">The History</h3>
+                        <h4 class="secondary-text-color-1">Our Restaurant</h4>
                         <p class="p-color">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis earum sunt
                             ratione quos alias, atque perspiciatis, reprehenderit eius ipsam in illo vel ipsum velit.
@@ -186,9 +168,7 @@
                             nihil, quo molestias exercitationem?
                         </p>
                         <button class="custom-restaurant-button">
-                            <span>
-                                Leer más
-                            </span>
+                            <span>Leer más</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </section>
@@ -196,6 +176,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer id="main-footer" class="secondary-bg-color secondary-text-color-2">
         <a href="#top-website" id="go-up-button">
             <i class="fa-solid fa-square-caret-up"></i>
@@ -204,23 +186,15 @@
             <nav>
                 <ul>
                     <li>
-                        <span>
-                            Copyright © 2024
-                        </span>
-                        <span>
-                            -
-                        </span>
+                        <span>Copyright © 2024</span>
+                        <span>-</span>
                     </li>
                     <li>
-                        <a href="#">
-                            Aviso Legal
-                        </a>
+                        <a href="#">Aviso Legal</a>
                         <span> -</span>
                     </li>
                     <li>
-                        <a href="#">
-                            Cookies
-                        </a>
+                        <a href="#">Cookies</a>
                     </li>
                 </ul>
             </nav>
