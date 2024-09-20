@@ -1,12 +1,9 @@
 /* Styles for the whole main header and its children */
 #main-header {
-    font-size: 1.6em;
-    height: var(--max-height-mobile-main-header);
-    max-height: var(--max-height-mobile-main-header);
+    font-size: 1rem;
 }
 #main-header i {
     cursor: pointer;
-    font-size: var(--icon-size);
 }
 #main-header .wrapper {
     display: flex;
@@ -45,7 +42,16 @@
     max-width: var(--max-w-container);
     margin: 1em var(--padding-x-container);
 }
-
 #main-header .wrapper nav:last-child label {
     display: none;
+}
+#main-header .wrapper nav:last-child ul li:first-child a {
+    color: var(--secondary-text-color-1);
+}
+#main-header .wrapper nav:last-child ul li a {
+    color: var(--text-disabled-nav-color);
+}
+
+#main-header .wrapper nav:last-child ul li a:hover {
+    color: var(--secondary-text-color-1);
 }

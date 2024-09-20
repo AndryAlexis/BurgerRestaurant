@@ -1,0 +1,109 @@
+#about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4em var(--padding-x-container);
+    font-size: 1rem;
+}
+
+#about-us .wrapper {
+    max-width: var(--max-w-container);
+    width: var(--max-w-container);
+}
+
+#about-us .wrapper h2 {
+    text-align: center;
+    width: fit-content;
+
+    margin: 0 auto 2em auto;
+
+    position: relative;
+
+    font: 400 normal 2em "Sofadi One", system-ui
+}
+
+#about-us .wrapper .content {
+    --min-w-column: 350px;
+    position: relative;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min-w-column), 1fr));
+}
+
+#about-us .wrapper .content > div {
+    position: relative;
+}
+
+#about-us .wrapper .content > div::before {
+    position: absolute;
+    content: '';
+
+    outline: 3px solid var(--secondary-text-color-1);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+
+    transform:rotateZ(10deg);
+   -webkit-transform:rotateZ(10deg);
+   -moz-transform:rotateZ(10deg);
+   -ms-transform:rotateZ(10deg);
+   -o-transform:rotateZ(10deg);
+}
+
+#about-us .wrapper .content > div:hover::before {
+   transform:rotateZ(0deg);
+   -webkit-transform:rotateZ(0deg);
+   -moz-transform:rotateZ(0deg);
+   -ms-transform:rotateZ(0deg);
+   -o-transform:rotateZ(0deg);
+}
+
+#about-us .wrapper .content > div {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+#about-us .wrapper .content > div img {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about-us .wrapper .content > section {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+#about-us .wrapper .content > section h3 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#about-us .wrapper .content > section h4 {
+    font-size: .9em;
+    font-weight: lighter;
+}
+#about-us .wrapper .content > section p {
+    font-size: .9em;
+}
+
+#about-us .wrapper .content > section button {
+    margin-top: 1em;
+}
+
+
+
+
+

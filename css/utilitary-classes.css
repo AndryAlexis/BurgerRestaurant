@@ -25,3 +25,59 @@
 .text-disabled-nav-color {
     color: var(--text-disabled-nav-color);
 }
+
+.custom-restaurant-button {
+    background-color: var(--secondary-text-color-1);
+    color: var(--secondary-text-color-2);
+
+    padding: 1em .8em;
+    width: 190px;
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+
+    font-size: .9em;
+
+    cursor: pointer;
+
+    box-shadow: inset -2px -2px 0 transparent;
+}
+
+.custom-restaurant-button:hover {
+    background-color: transparent;
+    color: var(--secondary-text-color-1);
+    box-shadow: 
+        inset -2px -2px 0 var(--secondary-text-color-1),
+        inset 2px 2px 0 var(--secondary-text-color-1);
+}
+
+
+
+.custom-restaurant-title {
+    padding-bottom: 15px;
+}
+
+.custom-restaurant-title::after,
+.custom-restaurant-title::before {
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    translate: -50%;
+}
+
+.custom-restaurant-title::after {
+    content: '';
+    width: 90%;
+    bottom: 0;
+    background-color: var(--secondary-text-color-1);
+}
+
+.custom-restaurant-title::before {
+    content: 'x';
+    width: 100%;
+    bottom: 37%;
+    color: var(--secondary-text-color-1);
+}

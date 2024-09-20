@@ -10,8 +10,10 @@
 
     --text-disabled-nav-color: rgb(171, 171, 171);
 
-    --max-w-container: 1200px;
+    --max-w-container: 1100px;
     --padding-x-container: 5%;
 
     --max-height-mobile-main-header: 125px;
+
+    --footer-height: 50px;
 }
