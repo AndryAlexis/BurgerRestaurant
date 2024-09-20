@@ -1,0 +1,51 @@
+/* Styles for the whole main header and its children */
+#main-header {
+    font-size: 1.6em;
+    height: var(--max-height-mobile-main-header);
+    max-height: var(--max-height-mobile-main-header);
+}
+#main-header i {
+    cursor: pointer;
+    font-size: var(--icon-size);
+}
+#main-header .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#main-header .wrapper nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-header .wrapper nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+
+    gap: 4em;
+}
+
+/* Styles for the FIRST nav child of the main header */
+#main-header .wrapper nav:first-child {
+    padding: 0 var(--padding-x-container);
+}
+#main-header .wrapper nav:first-child ul {
+    max-width: var(--max-w-container);
+    width: 100%;
+}
+
+/* Styles for the SECOND nav child of the main header */
+#main-header .wrapper nav:last-child div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: var(--max-w-container);
+    margin: 1em var(--padding-x-container);
+}
+
+#main-header .wrapper nav:last-child label {
+    display: none;
+}

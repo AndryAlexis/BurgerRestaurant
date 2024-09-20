@@ -1,0 +1,17 @@
+:root {
+    --secondary-text-color-1: rgb(255, 102, 0);
+    --secondary-text-color-2: white;
+    --secondary-bg-color: rgb(18, 21, 32);
+
+    --primary-text-color: rgb(12, 12, 12);
+    --primary-bg-color: white;
+
+    --p-color: rgb(97, 97, 97);
+
+    --text-disabled-nav-color: rgb(171, 171, 171);
+
+    --max-w-container: 1200px;
+    --padding-x-container: 5%;
+
+    --max-height-mobile-main-header: 125px;
+}

@@ -1,0 +1,27 @@
+.secondary-text-color-1 {
+    color: var(--secondary-text-color-1);
+}
+
+.secondary-text-color-2 {
+    color: var(--secondary-text-color-2);
+}
+
+.secondary-bg-color {
+    background-color: var(--secondary-bg-color);
+}
+
+.primary-text-color {
+    color: var(--primary-text-color);
+}
+
+.primary-bg-color {
+    color: var(--primary-bg-color);
+}
+
+.p-color {
+    color: var(--p-color);
+}
+
+.text-disabled-nav-color {
+    color: var(--text-disabled-nav-color);
+}
