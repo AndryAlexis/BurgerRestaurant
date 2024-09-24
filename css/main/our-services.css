@@ -3,8 +3,6 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 1rem;
-
     padding: 2em var(--padding-x-container);
 
     .wrapper {
@@ -31,19 +29,25 @@
     }
 
     .service {
-        display: grid;
-        gap: .5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
 
-        border-left: 0.0625rem solid var(--p-color);
-        padding-left: 1.5em;
+        border-style: solid;
+        border-color: var(--p-color);
+        border-left-width: 0.0625rem;
+
+        padding-left: 1.5rem;
+
+        height: 100%;
 
         &> i {
             border: 0.0625rem solid var(--secondary-text-color-1);
-            padding: .5em;
-            width: fit-content;
-            font-size: 1.2rem;
-            color: var(--secondary-text-color-1);
+            padding: .5rem;
+            width: 2.5rem;
+            height: 2.5rem;
 
+            font-size: 1.2rem;
             color: var(--secondary-text-color-1);
             font-size: 1.5rem;
         }
@@ -54,12 +58,20 @@
 
         p {
             font-size: .9rem;
+            line-height: 1.2rem;
+            height: 100%;
         }
 
         a, a + i {
             font-size: .9rem;
             color: var(--secondary-text-color-1);
             font-weight: bold;
+        }
+
+        &> div {
+            display: flex;
+            align-items: flex-end;
+            /* border: 1px solid red; */
         }
     }
 }

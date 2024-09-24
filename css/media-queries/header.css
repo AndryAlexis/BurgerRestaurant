@@ -1,27 +1,28 @@
-@media (width <= 60.0625rem) {
+@media (width <= 48rem) {
+    #main-header .wrapper nav {
+        &:first-child ul {
+            li i {
+                font-size: 1.8rem;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (width <= 36rem) {
     #main-header {
-        --icon-size: 1.8rem;
+        z-index: 2;
         position: relative;
-        height: var(--max-height-mobile-main-header);
-        max-height: var(--max-height-mobile-main-header);
+        /* height: var(--max-height-mobile-main-header);
+        max-height: var(--max-height-mobile-main-header); */
 
         .wrapper nav {
 
             ul {
                 gap: 2em;
-            }
-
-            &:first-child ul {
-
-                li {
-                    i {
-                        font-size: var(--icon-size);
-                    }
-                }
-
-                span {
-                    display: none;
-                }
             }
 
             &:last-child {
@@ -47,21 +48,31 @@
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                top: var(--max-height-mobile-main-header);
+                top: 100%;
                 left: 0;
                 width: 100%;
-
                 background-color: var(--primary-bg-color);
                 padding: var(--padding-x-container);
-
                 color: var(--text-disabled-nav-color);
+                z-index: -1;
+                transform: translateY(-100%);
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+                transition: transform 300ms;
+                -webkit-transition: transform 300ms;
+                -moz-transition: transform 300ms;
+                -ms-transition: transform 300ms;
+                -o-transition: transform 300ms;
 
-                z-index: 9999;
-            }
+                pointer-events: none;
+}
 
             &:not(:checked) + ul {
-                display: none;
-            }
+                transform: translateY(0);
+
+}
         }
     }
 }
