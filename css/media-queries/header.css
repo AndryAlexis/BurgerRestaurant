@@ -45,6 +45,7 @@
 
         input#mobile-main-header {
             &+ ul {
+                will-change: transform;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
@@ -65,14 +66,11 @@
                 -moz-transition: transform 300ms;
                 -ms-transition: transform 300ms;
                 -o-transition: transform 300ms;
-
-                pointer-events: none;
-}
+            }
 
             &:not(:checked) + ul {
                 transform: translateY(0);
-
-}
+            }
         }
     }
 }
