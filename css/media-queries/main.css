@@ -1,6 +1,6 @@
-@media (width <= 961px) {
+@media (width <= 60.0625rem) {
     #about-us .wrapper .content {
-        --min-w-column: 225px;
+        --min-w-column: 14.0625rem;
     }
 }
 

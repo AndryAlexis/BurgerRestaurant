@@ -1,57 +1,68 @@
-/* Styles for the whole main header and its children */
 #main-header {
     font-size: 1rem;
-}
-#main-header i {
-    cursor: pointer;
-}
-#main-header .wrapper {
-    display: flex;
-    flex-direction: column;
-}
-#main-header .wrapper nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#main-header .wrapper nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
 
-    gap: 4em;
-}
+    i {
+        cursor: pointer;
+    }
 
-/* Styles for the FIRST nav child of the main header */
-#main-header .wrapper nav:first-child {
-    padding: 0 var(--padding-x-container);
-}
-#main-header .wrapper nav:first-child ul {
-    max-width: var(--max-w-container);
-    width: 100%;
-}
+    .wrapper {
+        display: flex;
+        flex-direction: column;
 
-/* Styles for the SECOND nav child of the main header */
-#main-header .wrapper nav:last-child div {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    max-width: var(--max-w-container);
-    margin: 1em var(--padding-x-container);
-}
-#main-header .wrapper nav:last-child label {
-    display: none;
-}
-#main-header .wrapper nav:last-child ul li:first-child a {
-    color: var(--secondary-text-color-1);
-}
-#main-header .wrapper nav:last-child ul li a {
-    color: var(--text-disabled-nav-color);
-}
+            &:first-child {
+                padding: 0 var(--padding-x-container);
 
-#main-header .wrapper nav:last-child ul li a:hover {
-    color: var(--secondary-text-color-1);
+                ul {
+                    max-width: var(--max-w-container);
+                    width: 100%;
+                }
+            }
+
+            &:last-child {
+                div {
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    max-width: var(--max-w-container);
+                    margin: 1rem var(--padding-x-container);
+                }
+
+                label {
+                    display: none;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: var(--text-disabled-nav-color);
+
+                            &:hover {
+                                color: var(--secondary-text-color-1);
+                            }
+                        }
+
+                        &:first-child a {
+                            color: var(--secondary-text-color-1);
+                        }
+                    }
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+
+            gap: 4rem;
+        }
+    }
 }

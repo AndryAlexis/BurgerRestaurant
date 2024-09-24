@@ -1,5 +1,5 @@
-@media (width <= 961px) {
+@media (width <= 60.0625rem) {
     #main-footer .wrapper nav ul :is(span, a) {
-        font-size: .7em;
+        font-size: .7rem;
     }
 }

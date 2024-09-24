@@ -5,7 +5,7 @@
     z-index: 2;
 
     font-size: 1rem; 
-    padding: 1em var(--padding-x-container);
+    padding: 1rem var(--padding-x-container);
 
     display: flex;
     align-items: center;
@@ -13,43 +13,43 @@
     background-color: var(--secondary-bg-color);
     height: var(--footer-height);
     max-height: var(--footer-height);
-}
 
-#main-footer .wrapper {
-    max-width: var(--max-w-container);
-    width: var(--max-w-container);
-}
+    .wrapper {
+        max-width: var(--max-w-container);
+        width: var(--max-w-container);
 
-#main-footer .wrapper nav ul {
-    display: flex;
-    gap: .5em;
-}
+        nav ul {
+            display: flex;
+            gap: .5rem;
 
-#main-footer .wrapper nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5em;
-}
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+            }
 
-#main-footer .wrapper nav ul a {
-    color: var(--secondary-text-color-2);
-}
+            a {
+                color: var(--secondary-text-color-2);
 
-#main-footer .wrapper nav ul :is(span, a) {
-    font-size: 1em;
-}
+                &:hover {
+                    color: var(--secondary-text-color-1);
+                }
+            }
 
-#main-footer .wrapper nav ul a:hover {
-    color: var(--secondary-text-color-1);
+            span, a {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 #go-up-button {
-    --pseudo-margin: 10px;
+    --pseudo-margin: 0.625rem;
 
     position: absolute;
-    bottom: calc(var(--pseudo-margin) + 2.5em * 1.5);
-    right: 20px;
+    bottom: calc(var(--pseudo-margin) + 2.5rem * 1.5);
+    right: 1.25rem;
 
     display: grid;
     place-content: center;
@@ -57,8 +57,8 @@
     cursor: pointer;
 
     color: var(--secondary-text-color-1);
-}
 
-#go-up-button i {
-    font-size: 2.5em;
+    i {
+        font-size: 2.5rem;
+    }
 }
