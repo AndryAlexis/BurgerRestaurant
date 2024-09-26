@@ -31,6 +31,7 @@
 
             a {
                 color: var(--secondary-text-color-2);
+                text-decoration: none;
 
                 &:hover {
                     color: var(--secondary-text-color-1);
