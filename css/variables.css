@@ -10,7 +10,8 @@
 
     --text-disabled-nav-color: rgb(171, 171, 171);
 
-    --max-w-container: clamp(12.5rem, 100%, 68.75rem);
+    --min-w-container: 12.5rem;
+    --max-w-container: clamp(var(--min-w-container), 100%, 68.75rem);
     --padding-x-container: 5%;
 
     --footer-height: 3.125rem;
