@@ -15,8 +15,8 @@
     max-height: var(--footer-height);
 
     .wrapper {
-        max-width: var(--max-w-container);
-        width: var(--max-w-container);
+        width: clamp(12.5rem, 100%, var(--max-w-container));
+        margin-inline: auto;
 
         nav ul {
             display: flex;

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 2em var(--padding-x-container);
+    padding: 2rem var(--padding-x-container);
 
     .wrapper {
         max-width: var(--max-w-container);
@@ -13,65 +13,78 @@
             text-align: center;
             width: fit-content;
 
-            margin: 0 auto 2em auto;
+            margin: 0 auto 2rem auto;
 
             position: relative;
 
-            font: 400 normal 2em "Sofadi One", system-ui
+            font: 400 normal 2rem "Sofadi One", system-ui
         }
 
         .content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(14.0625rem, 1fr));
+            counter-reset: article-count;
 
             gap: 3em;
-        }
-    }
 
-    .service {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+            li {
+                counter-increment: article-count;
 
-        border-style: solid;
-        border-color: var(--p-color);
-        border-left-width: 0.0625rem;
+                .service {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
 
-        padding-left: 1.5rem;
+                    border-style: solid;
+                    border-color: var(--p-color);
+                    border-left-width: 0.0625rem;
 
-        height: 100%;
+                    padding-left: 1.5rem;
 
-        &> i {
-            border: 0.0625rem solid var(--secondary-text-color-1);
-            padding: .5rem;
-            width: 2.5rem;
-            height: 2.5rem;
+                    height: 100%;
 
-            font-size: 1.2rem;
-            color: var(--secondary-text-color-1);
-            font-size: 1.5rem;
-        }
+                    &> i {
+                        border: 0.0625rem solid var(--secondary-text-color-1);
+                        padding: .5rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
 
-        h3 {
-            font-size: 1.1rem;
-        }
+                        font-size: 1.2rem;
+                        color: var(--secondary-text-color-1);
+                        font-size: 1.5rem;
+                    }
 
-        p {
-            font-size: .9rem;
-            line-height: 1.2rem;
-            height: 100%;
-        }
+                    h3 {
+                        font-size: 1.1rem;
 
-        a, a + i {
-            font-size: .9rem;
-            color: var(--secondary-text-color-1);
-            font-weight: bold;
-        }
+                        &::before {
+                            content: counter(article-count);
+                            margin-right: 0.625rem;
+                        }
+                    }
 
-        &> div {
-            display: flex;
-            align-items: flex-end;
-            /* border: 1px solid red; */
+                    p {
+                        font-size: .9rem;
+                        line-height: 1.2rem;
+                        height: 100%;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    a, a + i {
+                        font-size: .9rem;
+                        color: var(--secondary-text-color-1);
+                        font-weight: bold;
+                    }
+
+                    &> div {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+            }
         }
     }
 }

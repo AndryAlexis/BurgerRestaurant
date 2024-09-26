@@ -1,24 +1,8 @@
 * {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
-
-html {
-   scroll-behavior: smooth;
-}
-
-a {
-	text-decoration: none;
-}
-
-/* p {
-	line-height: 1.2rem;
-} */
-
-img {
-	width: 100%;
-	display: block;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,8 +16,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -41,13 +23,18 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, img {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2rem;
 	font-size: 1rem;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: auto;
+	scroll-behavior: smooth;
+}
+img {
+	max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -63,4 +50,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+td, th {
+  padding: 0.5em; /* or 0.5em 1em... or any value different from 0 */
+}
+:is(tbody, table) > tr:nth-child(odd) {
+  background: #0001; /* or #fff1 for dark themes */
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }

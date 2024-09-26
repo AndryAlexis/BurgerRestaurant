@@ -1,10 +1,9 @@
 @media (width <= 48rem) {
-    #main-header .wrapper nav {
+    #main-header nav {
         &:first-child ul {
             li i {
                 font-size: 1.8rem;
             }
-
             span {
                 display: none;
             }
@@ -16,24 +15,22 @@
     #main-header {
         z-index: 2;
         position: relative;
-        /* height: var(--max-height-mobile-main-header);
-        max-height: var(--max-height-mobile-main-header); */
 
-        .wrapper nav {
+        nav {
 
             ul {
                 gap: 2em;
             }
 
             &:last-child {
+                .wrapper {
+                    display: flex;
+                }
                 label {
                     display: flex;
-                    justify-content: flex-end;
                     align-self: center;
-                    margin-right: var(--padding-x-container);
                     padding: 0;
                 }
-
                 ul li {
                     text-align: center;
                     border-bottom: 0.125rem solid var(--text-disabled-nav-color);
