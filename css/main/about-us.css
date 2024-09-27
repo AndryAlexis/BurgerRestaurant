@@ -80,8 +80,9 @@
                 }
             }
 
-            button {
+            a {
                 margin-top: 1rem;
+                text-decoration: none;
             }
         }  
     }

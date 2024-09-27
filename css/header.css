@@ -32,6 +32,10 @@
             ul {
                 width: inherit;
             }
+
+            a {
+                color: var(--secondary-text-color-2);
+            }
         }
 
         &:last-child {
@@ -58,6 +62,11 @@
 
                     figure {
                         width: 9rem;
+
+                        img {
+                            width: clamp(100px, 100%, 100%);
+                            height: auto;
+                        }
                     }
 
                     &>* {

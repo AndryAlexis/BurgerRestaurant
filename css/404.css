@@ -1,0 +1,77 @@
+@import url(./reset-css.css);
+@import url(./variables.css);
+@import url(./fonts.css);
+@import url(./utilitary-classes.css);
+
+#main-404 {
+    align-content: center;
+
+    width: 100%;
+    height: 100vh;
+    
+    section {
+        display: grid;
+        place-items: center;
+        gap: 50px;
+        width: fit-content;
+        margin: 0 auto;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 13rem;
+            text-align: center;
+            line-height: 1;
+            font-weight: bold;
+            position: relative;
+            font-family: "Sofadi One", system-ui;
+
+            width: fit-content;
+
+            span:first-of-type {
+                color: var(--secondary-text-color-1);
+            }
+
+            &::after, &::before {
+                position: absolute;
+                height: 0.5rem;
+                left: 50%;
+                translate: -50%;
+            }
+            &::after {
+                content: '';
+                width: 90%;
+                bottom: 0px;
+                background-color: var(--secondary-text-color-1);
+                border-radius: 0.3125rem;
+                -webkit-border-radius: 0.3125rem;
+                -moz-border-radius: 0.3125rem;
+                -ms-border-radius: 0.3125rem;
+                -o-border-radius: 0.3125rem;
+            }
+
+            &::before {
+                content: 'x';
+                width: 100%;
+                bottom: 20%;
+                font-size: 5rem;
+                color: var(--secondary-text-color-1);
+            }
+        }
+
+        p {
+            text-align: center;
+
+            font-size: 2rem;
+
+            span:first-child {
+                text-decoration: line-through;
+                font-family: "Sofadi One", system-ui;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

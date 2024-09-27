@@ -55,6 +55,7 @@
 
 .custom-restaurant-title {
     padding-bottom: 0.9375rem;
+    position: relative;
 
     &::after, &::before {
         position: absolute;
