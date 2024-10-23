@@ -1,1 +1,3 @@
-It's just an exercise to practice my html and css skills
+### Burger Restaurant
+- It's an exercise to practice my html and css skills
+- Responsive design
